@@ -1,0 +1,22 @@
+{
+  "name": "lazarmatrak",
+  "version": "1.0.0",
+  "description": "Zavrsni Cypress test QA 21",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matraklazar/zavrsniTestQA21.git"
+  },
+  "author": "Lazar Matrak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matraklazar/zavrsniTestQA21/issues"
+  },
+  "homepage": "https://github.com/matraklazar/zavrsniTestQA21#readme",
+  "dependencies": {
+    "cypress": "^12.14.0"
+  }
+}
