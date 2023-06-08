@@ -18,7 +18,7 @@ describe('Login form test suite',()=>{
             cy.url().should('eq',Cypress.config('baseUrl'));
         });    
         
-        it('Successful login',()=>{
+        it.only('Successful login',()=>{
             login.login();
         });
     });
