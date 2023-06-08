@@ -18,5 +18,8 @@
   "homepage": "https://github.com/matraklazar/zavrsniTestQA21#readme",
   "dependencies": {
     "cypress": "^12.14.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2"
   }
 }
