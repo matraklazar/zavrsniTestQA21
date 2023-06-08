@@ -25,7 +25,10 @@ class CreateBoard{
     get kanbanRadioBtn(){
         return cy.get('[name="type_kanban"]');
     }
-
+    
+    get myOrganizationTitle(){
+        return cy.get('.vs-l-organization__title');
+    }
 
     createBoard(){
         this.myOrganizationCard.click();
@@ -38,6 +41,26 @@ class CreateBoard{
         this.nextBtn.click();
         this.nextBtn.click();
         this.nextBtn.click();
+    }
+
+    get lastCreatedBoard(){
+        return cy.get('a').contains(`${this.boardName}`);
+    }
+
+    get configureBoard(){
+        return cy.get('[data-cy="board-configuration"] > span > div > .vs-c-site-logo');
+    }
+    get deleteBoardBtn(){
+        return cy.get(':nth-child(8) > .vs-c-settings-section > .vs-c-settings-section-form > .vs-c-btn');
+    }
+    get confirmDeleteBoardBtn(){
+        return cy.get('.vs-u-text--right > .el-button--success');
+    }
+    deleteBoard(){
+        this.lastCreatedBoard.click();
+        this.configureBoard.click();
+        this.deleteBoardBtn.click();
+        this.confirmDeleteBoardBtn.click();
     }
 }
 
